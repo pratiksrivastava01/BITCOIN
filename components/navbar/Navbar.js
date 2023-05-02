@@ -82,14 +82,17 @@ function Navbar() {
         <Link href="/paper" legacyBehavior>
           <a className={styles.navLink}>Paper Submission</a>
         </Link>
-        <Link href="/download" legacyBehavior>
+        <Link
+          href="https://drive.google.com/file/d/1CvZ15e2S4nksVwlu95MxJgVvzfSX-P_e/view?usp=sharing"
+          legacyBehavior
+        >
           <a className={styles.navLink}>Download</a>
         </Link>
         <Link href="/contact" legacyBehavior>
           <a
             className={
               (styles.navLink,
-              `bg-primary-light text-[#002E73] p-1 rounded-sm font-bold`)
+              `bg-primary-light text-sm p-[0.8rem] text-[#002E73]  rounded-sm font-bold`)
             }
           >
             CONTACT US
