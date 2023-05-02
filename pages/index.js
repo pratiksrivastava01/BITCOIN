@@ -56,7 +56,7 @@ export default function Home() {
         <h1 className="text-[#002E73] text-3xl sm:text-lg font-bold text-center">
           BIT, Sindri, Dhanbad, Jharkhand, INDIA
         </h1>
-        <div className="w-[80rem] h-[40rem] ml-[8rem] mt-[2rem] sm:w-[28rem] sm:h-[20rem] sm:ml-[1rem]">
+        <div className="w-[80rem] h-[40rem] ml-[8rem] mt-[2rem] sm:w-[23rem] sm:h-[20rem] sm:ml-[0.2rem]">
           <ImageSlider slides={slides} />
         </div>
         <Footer />

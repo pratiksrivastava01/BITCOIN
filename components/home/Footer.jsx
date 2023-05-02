@@ -6,7 +6,7 @@ import { RxDotFilled } from "react-icons/rx";
 const Footer = () => {
   return (
     <div className="flex flex-row items-center sm:flex-col">
-      <div className="h-[110rem] w-[25rem] border-2  border-primary mt-[5rem] ml-[8rem] shadow-2xl sm:ml-[1.8rem] sm:h-auto sm:w-[25rem]">
+      <div className="h-[110rem] w-[25rem] border-2  border-primary mt-[5rem] ml-[8rem] shadow-2xl sm:ml-[0.2rem] sm:h-auto sm:w-[21rem]">
         <div className="p-5">
           <h1 className="font-bold text-3xl sm:text-lg">Core Team</h1>
           <h2 className="mt-[2rem] font-bold text-lg sm:text-sm">
@@ -75,7 +75,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div className="h-[110rem] w-[53rem] border-2  border-primary shadow-2xl mt-[5rem] ml-[2rem] sm:h-auto sm:w-[25rem]">
+      <div className="h-[110rem] w-[53rem] border-2  border-primary shadow-2xl mt-[5rem] sm:ml-[0.2rem] ml-[2rem] sm:h-auto sm:w-[21rem]">
         <p className="p-5 mt-[2rem] ml-[1rem] mr-[1rem] sm:text-xs text-center">
           The Department of Electrical Engineering at BIT SINDRI proudly
           announces to host the{" "}

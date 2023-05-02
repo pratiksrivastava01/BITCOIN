@@ -4,7 +4,7 @@ import { CgClose } from "react-icons/cg";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./Hamburger.module.css";
-// import Logo from "../../assets/hncc-logo.png";
+import Logo from "../../assets/logo.png";
 // import Button from "../button/Button";
 
 const SpanStyle = {
@@ -65,7 +65,13 @@ function Sidebar({ isMounted, unmount }) {
         <div>
           <Link href="/" legacyBehavior>
             <a className="flex items-center" onClick={unmount}>
-              {/* <Image src={Logo} alt="HnCC" height="60px" width="60px" /> */}
+              <Image
+                src={Logo}
+                alt="HnCC"
+                height="60px"
+                width="60px"
+                className="h-[3rem] w-[3rem] "
+              />
             </a>
           </Link>
         </div>
@@ -76,33 +82,28 @@ function Sidebar({ isMounted, unmount }) {
 
       <div id="navList" className={styles.navItems}>
         <Link href="/about" legacyBehavior>
-          <a className={styles.navLink} onClick={unmount}>
-            About Us
-          </a>
+          <a className={styles.navLink}>About Us</a>
         </Link>
-        <Link href="/teams" legacyBehavior>
-          <a className={styles.navLink} onClick={unmount}>
-            Team
-          </a>
+        <Link href="/registeration" legacyBehavior>
+          <a className={styles.navLink}>Registeration</a>
         </Link>
-        <Link href="/alumni" legacyBehavior>
-          <a className={styles.navLink} onClick={unmount}>
-            Alumni
-          </a>
+        <Link href="/paper" legacyBehavior>
+          <a className={styles.navLink}>Paper Submission</a>
+        </Link>
+        <Link
+          href="https://drive.google.com/file/d/1CvZ15e2S4nksVwlu95MxJgVvzfSX-P_e/view?usp=sharing"
+          legacyBehavior
+        >
+          <a className={styles.navLink}>Download</a>
         </Link>
         <Link href="/contact" legacyBehavior>
-          <a className={styles.navLink} onClick={unmount}>
-            Contact Us
-          </a>
-        </Link>
-        <Link href="/events" legacyBehavior>
-          <a className={styles.navLink} onClick={unmount}>
-            Events
-          </a>
-        </Link>
-        <Link href="/faqs" legacyBehavior>
-          <a className={styles.navLink} onClick={unmount}>
-            FAQs
+          <a
+            className={
+              (styles.navLink,
+              `bg-primary-light text-sm p-[0.8rem] text-[#002E73]  rounded-sm font-bold`)
+            }
+          >
+            CONTACT US
           </a>
         </Link>
         <a
