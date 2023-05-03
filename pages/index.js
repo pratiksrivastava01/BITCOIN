@@ -2,6 +2,7 @@ import Footer from "@/components/home/Footer";
 import ImageSlider from "@/components/imageSlider";
 import Navbar from "@/components/navbar/Navbar";
 import Head from "next/head";
+import Notification from "@/components/Notification";
 
 export default function Home() {
   const slides = [
@@ -31,18 +32,8 @@ export default function Home() {
       </Head>
       <div className=" flex flex-col ">
         <Navbar />
-        <div className="flex flex-row ">
-          <div className="bg-[#002256] p-4 text-[white] sm:text-lg tfont-bold text-2xl">
-            {" "}
-            Notification
-          </div>
-          <div className="bg-[#FAC804] p-4 sm:text-xs">
-            {" "}
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque
-            autem asperiores doloribus magni aspernatur, sequi quisquam quasi
-            at!Lorem ipsum dolor sita
-          </div>
-        </div>
+        <Notification />
+
         <h1 className="text-center text-5xl text-[#002E73] font-bold sm:text-3xl mt-[2rem] ">
           Welcome To BITCON-23
         </h1>
@@ -56,7 +47,7 @@ export default function Home() {
         <h1 className="text-[#002E73] text-3xl sm:text-lg font-bold text-center">
           BIT, Sindri, Dhanbad, Jharkhand, INDIA
         </h1>
-        <div className="w-[80rem] h-[40rem] ml-[8rem] mt-[2rem] sm:w-[23rem] sm:h-[20rem] sm:ml-[0.2rem]">
+        <div className="w-[80rem] h-[40rem] ml-[8rem] mt-[2rem] sm:w-[23rem] sm:h-[20rem] sm:ml-[1.2rem]">
           <ImageSlider slides={slides} />
         </div>
         <Footer />

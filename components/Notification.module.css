@@ -1,0 +1,21 @@
+@keyframes spin-slow {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-0%);
+  }
+}
+
+.animate {
+  animation: spin-slow 30s linear infinite;
+  text-align: center;
+  white-space: nowrap;
+  margin-top: 15px;
+  font-weight: bold;
+  overflow: hidden;
+  overflow-y: hidden;
+  /* overflow-x: hidden; hide horizontal overflow */
+  /* overflow-y: scroll; */
+  /* background: yellow; */
+}
