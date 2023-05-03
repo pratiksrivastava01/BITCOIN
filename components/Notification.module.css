@@ -3,7 +3,7 @@
     transform: translateX(100%);
   }
   to {
-    transform: translateX(-0%);
+    transform: translateX(-100%);
   }
 }
 
@@ -15,7 +15,4 @@
   font-weight: bold;
   overflow: hidden;
   overflow-y: hidden;
-  /* overflow-x: hidden; hide horizontal overflow */
-  /* overflow-y: scroll; */
-  /* background: yellow; */
 }

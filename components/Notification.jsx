@@ -18,6 +18,14 @@ const notification = () => {
           </span>{" "}
           doloribus magni aspernatur, sequi quisquam quasi at!Lorem ipsum dolor
           <span>sita</span>
+          <span>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita
+            eos odit atque fugiat iusto possimus quisquam sed laboriosam
+            commodi? Nam autem ex accusamus, nostrum deleniti, facere ratione
+            quibusdam velit rem tempore tempora placeat soluta ullam, tenetur
+            quod reiciendis. Ex placeat odio illo. Illum dolore accusamus autem
+            quisquam necessitatibus maiores cum.
+          </span>
         </div>
       </div>
     </div>
