@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 // import { BsDot } from "react-icons/bs";
 // import { RxDotFilled } from "@react-icons/rx";
@@ -6,7 +7,7 @@ import { RxDotFilled } from "react-icons/rx";
 const Footer = () => {
   return (
     <div className="flex flex-row items-center sm:flex-col">
-      <div className="h-[110rem] w-[25rem] border-2  border-primary mt-[5rem] ml-[8rem] shadow-2xl sm:ml-[0.2rem] sm:h-auto sm:w-[21rem]">
+      <div className="h-[93.8rem] w-[25rem] border-2  border-primary mt-[5rem] ml-[8rem] shadow-2xl sm:ml-[0.2rem] sm:h-auto sm:w-[21rem]">
         <div className="p-5">
           <h1 className="font-bold text-3xl sm:text-lg">Core Team</h1>
           <h2 className="mt-[2rem] font-bold text-lg sm:text-sm">
@@ -75,7 +76,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div className="h-[110rem] w-[53rem] border-2  border-primary shadow-2xl mt-[5rem] sm:ml-[0.2rem] ml-[2rem] sm:h-auto sm:w-[21rem]">
+      <div className="h-auto w-[53rem] border-2  border-primary shadow-2xl mt-[5rem] sm:ml-[0.2rem] ml-[2rem] sm:h-auto sm:w-[21rem]">
         <p className="p-5 mt-[2rem] ml-[1rem] mr-[1rem] sm:text-xs text-center">
           The Department of Electrical Engineering at BIT SINDRI proudly
           announces to host the{" "}
@@ -101,7 +102,7 @@ const Footer = () => {
           </span>
           <br className="mt-2" />
           <p className="mt-[2rem]">
-            <span className="text-xl text-[#af2a2a] sm:text-sm mt-[2rem] font-bold gap-3 ">
+            <span className="text-xl text-[#af2a2a] sm:text-sm mr-3 mt-[2rem] font-bold gap-3 ">
               Highlights:
             </span>
             There will be three major tracks namely (i) Electrical Engineering,
@@ -113,117 +114,54 @@ const Footer = () => {
             for best PhD Thesis.
           </p>
         </p>
-        <h1 className="p-5 mt-[2rem] text-[#002E73] font-bold text-2xl sm:mt-0 ml-[1rem] mr-[1rem] sm:text-lg text-center">
+        <h1 className="p-5 mt-[2rem] text-primary font-bold text-2xl sm:mt-0 ml-[1rem] mr-[1rem] sm:text-lg text-center">
           Topics included
         </h1>
-        <div className="flex flex-row gap-8 ">
+        <div className="flex flex-row flex-wrap gap-8 ml-[2rem] ">
           <div className="">
-            <h3 className="text-[#002E73] font-bold text-2xl ml-8  sm:text-sm">
-              Track 1: Electrical Engineering
+            <h3 className=" text-primary font-medium text-lg sm:ml-[0rem] ml-8  sm:text-sm">
+              <span className="text-[#002E73] font-bold mr-3">Track 1:</span>
+              Power System Dynamics:
             </h3>
-            <ul>
-              <li>
-                <RxDotFilled className="mt-[2rem] ml-3" />{" "}
-                <p className="mt-[-1.3rem] ml-8 sm:text-xs">
-                  Power Generation, Transmission and Distribution
-                </p>
-              </li>
-              <li>
-                <RxDotFilled className="mt-[2rem] ml-3" />{" "}
-                <p className="mt-[-1.3rem] ml-8 sm:text-xs">
-                  Power Electronics and Applications
-                </p>
-              </li>
-              <li>
-                <RxDotFilled className="mt-[2rem] ml-3" />{" "}
-                <p className="mt-[-1.3rem] ml-8 sm:text-xs">
-                  Grid Interconnection Energy Storage
-                </p>
-              </li>
-              <li>
-                <RxDotFilled className="mt-[2rem] ml-3" />{" "}
-                <p className="mt-[-1.3rem] ml-8 sm:text-xs">
-                  System Engg, Control, and Instrumentation
-                </p>
-              </li>
-              <li>
-                <RxDotFilled className="mt-[2rem] ml-3" />{" "}
-                <p className="mt-[-1.3rem] ml-8 sm:text-xs">
-                  Signal Processing and Image Processing
-                </p>
-              </li>
-            </ul>
           </div>
           <div className="">
             {" "}
-            <h3 className="text-[#002E73] font-bold text-2xl  sm:text-sm">
-              Track 1: Electrical Engineering
+            <h3 className="text-primary  font-medium text-lg  sm:text-sm">
+              <span className="text-[#002E73] font-bold mr-3">Track 2:</span>
+              Power Electronics Drives <br /> & Applications:
             </h3>
-            <ul>
-              <li>
-                <RxDotFilled className="mt-[2rem] ml-3" />{" "}
-                <p className="mt-[-1.3rem] ml-8 sm:text-xs">
-                  Robotics Robotics and human interaction
-                </p>
-              </li>
-              <li>
-                <RxDotFilled className="mt-[2rem] ml-3" />{" "}
-                <p className="mt-[-1.3rem] ml-8 sm:text-xs">
-                  Robotics for manufacturing.
-                </p>
-              </li>
-              <li>
-                <RxDotFilled className="mt-[2rem] ml-3" />{" "}
-                <p className="mt-[-1.3rem] ml-8 sm:text-xs">
-                  Controls and system dynamics
-                </p>
-              </li>
-              <li>
-                <RxDotFilled className="mt-[2rem] ml-3" />{" "}
-                <p className="mt-[-1.3rem] ml-8 sm:text-xs">
-                  Sensors and actuators.
-                </p>
-              </li>
-              <li>
-                <RxDotFilled className="mt-[2rem] ml-3" />{" "}
-                <p className="mt-[-1.3rem] ml-8 sm:text-xs">
-                  Prosthetic devices.
-                </p>
-              </li>
-            </ul>
           </div>
         </div>
-        <div className=" mt-[3rem]   ">
-          <h3 className="text-[#002E73] font-bold text-2xl ml-8  sm:text-sm">
-            Track 1: Electrical Engineering
-          </h3>
-          <ul>
-            <li>
-              <RxDotFilled className="mt-[2rem] ml-3" />{" "}
-              <p className="mt-[-1.3rem] ml-8 sm:text-xs">
-                Sustainable energy solutions and environmental aspects
-              </p>
-            </li>
-            <li>
-              <RxDotFilled className="mt-[2rem] ml-3" />{" "}
-              <p className="mt-[-1.3rem] ml-8 sm:text-xs">
-                Renewable Energy Sources and Technology
-              </p>
-            </li>
-            <li>
-              <RxDotFilled className="mt-[2rem] ml-3" />{" "}
-              <p className="mt-[-1.3rem] ml-8 sm:text-xs">
-                Control and Operation of Hybrid Vehicles
-              </p>
-            </li>
-            <li>
-              <RxDotFilled className="mt-[2rem] ml-3" />{" "}
-              <p className="mt-[-1.3rem] ml-8 sm:text-xs">
-                Solar and Wind Power Technology
-              </p>
-            </li>
-          </ul>
+        <div className="flex flex-row flex-wrap sm:gap-0 gap-[5rem] ml-[2rem] ">
+          <div className=" mt-[3rem]   ">
+            <h3 className="text-primary font-medium  text-lg sm:ml-0 ml-8  sm:text-sm">
+              <span className="text-[#002E73] font-bold mr-3">Track 3:</span>
+              Control System, <br />
+              Automation & Applications:
+            </h3>
+          </div>
+          <div className="  mt-[3rem]  ">
+            <h3 className="text-primary font-medium text-lg  sm:text-sm">
+              <span className="text-[#002E73] font-bold mr-3">Track 4:</span>
+              Green Energy Technology <br />& Applications:
+            </h3>
+          </div>
         </div>
+        <div className="  mt-[3rem]  items-center sm:ml-[2rem] ml-[8rem]">
+          <h3 className="text-primary font-medium text-lg  sm:text-sm">
+            <span className="text-[#002E73] font-bold mr-3">Track 5:</span>
+            Artificial Intelligence, IoT and Signal Processing
+          </h3>
+        </div>
+
+        <div className=" flex justify-center mt-[2rem] ">
+          <Link href="google.com">
+            <button className="border-2 border-[white] text-[white] rounded-xl bg-[#002E73] hover:bg-[white] hover:text-[#002E73] hover:border-[#002E73] p-4">
+              View More
+            </button>
+          </Link>
+        </div>
+
         <div className="mt-[2rem]">
           <p className="p-4 sm:text-xs">
             <span className="text-[#002E73] font-bold text-xl ml-8  sm:text-sm">

@@ -7,6 +7,8 @@ import styles from "./Navbar.module.css";
 import Logo from "../../assets/logo.png";
 // import Button from "../button/Button";
 import Sidebar from "./Sidebar";
+// import { Dropdown } from "@nextui-org/react";
+// import { Dropdown } from "@nextui-org/react";
 
 const SpanStyle = {
   zIndex: 1,
@@ -56,6 +58,12 @@ function Navbar() {
 
     return () => document.removeEventListener("scroll", handleScroll);
   }, []);
+  const [selected, setSelected] = React.useState(new Set(["text"]));
+
+  const selectedValue = React.useMemo(
+    () => Array.from(selected).join(", ").replaceAll("_", " "),
+    [selected]
+  );
 
   return (
     <section id="navbar" className={`${styles.navbar}`}>
@@ -73,14 +81,33 @@ function Navbar() {
         </Link>
       </div>
       <div id="navList" className={styles.navbarList}>
-        <Link href="/about" legacyBehavior>
+        <Link href="/About/department" legacyBehavior>
           <a className={styles.navLink}>About Us</a>
         </Link>
         <Link href="/registeration" legacyBehavior>
           <a className={styles.navLink}>Registeration</a>
         </Link>
+        {/* <Dropdown>
+          <Dropdown.Button flat color="secondary" css={{ tt: "capitalize" }}>
+            {selectedValue}
+          </Dropdown.Button>
+          <Dropdown.Menu
+            aria-label="Multiple selection actions"
+            color="secondary"
+            disallowEmptySelection
+            selectionMode="multiple"
+            selectedKeys={selected}
+            onSelectionChange={setSelected}
+          >
+            <Dropdown.Item key="text">Text</Dropdown.Item>
+            <Dropdown.Item key="number">Number</Dropdown.Item>
+            <Dropdown.Item key="date">Date</Dropdown.Item>
+            <Dropdown.Item key="single_date">Single Date</Dropdown.Item>
+            <Dropdown.Item key="iteration">Iteration</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown> */}
         <Link href="/paper" legacyBehavior>
-          <a className={styles.navLink}>Paper Submission</a>
+          <a className={styles.navLink}>Awards</a>
         </Link>
         <Link
           href="https://drive.google.com/file/d/1CvZ15e2S4nksVwlu95MxJgVvzfSX-P_e/view?usp=sharing"
