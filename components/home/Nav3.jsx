@@ -1,6 +1,6 @@
 import React from "react";
 
-const Nav2 = () => {
+const Nav3 = () => {
   return (
     <>
       <div className="flex flex-col sm:hidden  items-center bg-[#FAC804] p-6">
@@ -44,4 +44,4 @@ const Nav2 = () => {
   );
 };
 
-export default Nav2;
+export default Nav3;

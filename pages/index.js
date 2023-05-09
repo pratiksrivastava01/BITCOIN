@@ -10,9 +10,18 @@ import Nav2 from "@/components/home/Nav2";
 
 export default function Home() {
   const slides = [
-    { url: "http://localhost:3000/image-1.jpg", title: "beach" },
-    { url: "http://localhost:3000/image-2.jpg", title: "boat" },
-    { url: "http://localhost:3000/image-3.jpg", title: "forest" },
+    {
+      url: "https://res.cloudinary.com/du196ag4l/image/upload/v1683607533/28DhanBIT7_172735_vzzfjq.jpg",
+      title: "forest",
+    },
+    {
+      url: "https://res.cloudinary.com/du196ag4l/image/upload/v1683607364/BIT-Sindri_lkzgzm.jpg",
+      title: "beach",
+    },
+    {
+      url: "https://res.cloudinary.com/du196ag4l/image/upload/v1683607435/Electrical_wdzoph.jpg",
+      title: "boat",
+    },
     { url: "http://localhost:3000/image-4.jpg", title: "city" },
     { url: "http://localhost:3000/image-5.jpg", title: "italy" },
   ];
